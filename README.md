@@ -24,8 +24,6 @@ class MLEngineer:
         self.name = "s0r4d3v"
         self.role = "Machine Learning Engineer"
         self.location = "Japan 🇯🇵"
-        self.languages = ["Python", "Java", "Kotlin"]
-        self.tools = ["Neovim", "Nix"]
         
     def current_focus(self):
         return {
