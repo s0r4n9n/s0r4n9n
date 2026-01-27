@@ -88,7 +88,7 @@
   <!-- Profile box -->
   <rect x="100" y="400" width="600" height="160" fill="#fff" stroke="#000080" stroke-width="2"/>
   <text x="120" y="435" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ff0000">💻 管理人プロフィール</text>
-  <text x="120" y="475" font-family="Arial, sans-serif" font-size="20" fill="#000">ユーザー名: s0r4d3v</text>
+  <text x="120" y="475" font-family="Arial, sans-serif" font-size="20" fill="#000">ユザネ: s0r4d3v（Twitter: @s0r4d3v）</text>
   <text x="120" y="510" font-family="Arial, sans-serif" font-size="20" fill="#000">職種: 機械学習エンジニア</text>
   <text x="120" y="545" font-family="Arial, sans-serif" font-size="20" fill="#000">好きなもの: ゲーム 🎮</text>
   
