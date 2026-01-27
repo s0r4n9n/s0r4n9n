@@ -1,0 +1,210 @@
+<svg fill="none" viewBox="0 0 800 600" width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes blink {
+          0%, 50% { opacity: 1; }
+          51%, 100% { opacity: 0; }
+        }
+        
+        @keyframes rainbow {
+          0% { color: #ff0000; }
+          16% { color: #ff7f00; }
+          33% { color: #ffff00; }
+          50% { color: #00ff00; }
+          66% { color: #0000ff; }
+          83% { color: #8b00ff; }
+          100% { color: #ff0000; }
+        }
+        
+        @keyframes sparkle {
+          0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+          50% { transform: scale(1.2) rotate(180deg); opacity: 0.7; }
+        }
+        
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: "MS PGothic", "Osaka", "ヒラギノ角ゴ Pro W3", sans-serif;
+          background: #000080;
+          background-image: 
+            repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px);
+          color: #fff;
+          overflow: hidden;
+        }
+        
+        .container {
+          width: 800px;
+          height: 600px;
+          padding: 20px;
+          position: relative;
+        }
+        
+        .header {
+          text-align: center;
+          background: linear-gradient(135deg, #ff00ff, #00ffff);
+          border: 4px ridge #ffd700;
+          padding: 20px;
+          box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+          margin-bottom: 20px;
+        }
+        
+        .title {
+          font-size: 36px;
+          font-weight: bold;
+          text-shadow: 3px 3px 0 #000, -1px -1px 0 #fff;
+          animation: rainbow 3s linear infinite;
+          margin-bottom: 10px;
+        }
+        
+        .subtitle {
+          font-size: 14px;
+          color: #ffff00;
+          animation: blink 1s infinite;
+        }
+        
+        .counter-box {
+          background: #c0c0c0;
+          border: 3px outset #dfdfdf;
+          padding: 15px;
+          margin: 20px auto;
+          width: fit-content;
+          box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
+        }
+        
+        .counter-label {
+          color: #000080;
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        .counter-display {
+          background: #000;
+          color: #00ff00;
+          font-family: "Courier New", monospace;
+          font-size: 32px;
+          padding: 10px 20px;
+          border: 2px inset #666;
+          letter-spacing: 3px;
+          text-align: center;
+        }
+        
+        .kiriban-box {
+          background: #ffffcc;
+          border: 3px double #ff0000;
+          padding: 15px;
+          margin: 20px 0;
+          color: #000;
+        }
+        
+        .kiriban-title {
+          font-size: 20px;
+          color: #ff0000;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        .kiriban-text {
+          font-size: 14px;
+          line-height: 1.6;
+        }
+        
+        .decoration {
+          text-align: center;
+          margin: 15px 0;
+        }
+        
+        .star {
+          display: inline-block;
+          color: #ffff00;
+          font-size: 24px;
+          animation: sparkle 1s infinite;
+          margin: 0 5px;
+        }
+        
+        .star:nth-child(2) { animation-delay: 0.2s; }
+        .star:nth-child(3) { animation-delay: 0.4s; }
+        .star:nth-child(4) { animation-delay: 0.6s; }
+        .star:nth-child(5) { animation-delay: 0.8s; }
+        
+        .note {
+          background: #fff;
+          border: 2px solid #000080;
+          padding: 10px;
+          margin: 15px 0;
+          color: #000;
+          font-size: 13px;
+        }
+        
+        .note-title {
+          color: #ff0000;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        
+        .footer {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 12px;
+          color: #00ffff;
+        }
+        
+        .blink-text {
+          animation: blink 1s infinite;
+        }
+      </style>
+      
+      <div class="container">
+        <div class="header">
+          <div class="title">★☆ ようこそ! ☆★</div>
+          <div class="subtitle">Welcome to my homepage!!</div>
+        </div>
+        
+        <div class="decoration">
+          <span class="star">★</span>
+          <span class="star">☆</span>
+          <span class="star">★</span>
+          <span class="star">☆</span>
+          <span class="star">★</span>
+        </div>
+        
+        <div class="counter-box">
+          <div class="counter-label">👁️ あなたは</div>
+          <div class="counter-display">0123456</div>
+          <div class="counter-label">人目の訪問者です！</div>
+        </div>
+        
+        <div class="kiriban-box">
+          <div class="kiriban-title">🎉 キリ番ゲットで記念品プレゼント! 🎉</div>
+          <div class="kiriban-text">
+            <strong>1000, 2000, 3000...</strong> などのキリ番を踏んだ方は<br/>
+            掲示板にてご報告ください！素敵なプレゼントを差し上げます♪<br/>
+            <span class="blink-text">※スクリーンショット必須※</span>
+          </div>
+        </div>
+        
+        <div class="note">
+          <div class="note-title">📝 お知らせ</div>
+          <div>
+            • このサイトはInternet Explorer 5.0以上推奨です<br/>
+            • 800×600ピクセル以上の解像度でご覧ください<br/>
+            • リンクフリーですがトップページにお願いします<br/>
+            • 相互リンク募集中！
+          </div>
+        </div>
+        
+        <div class="footer">
+          <div>Under Construction 🚧 工事中 🚧</div>
+          <div style="margin-top: 5px;">
+            <span class="blink-text">Last Update: 2025.01.27</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
