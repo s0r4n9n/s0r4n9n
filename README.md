@@ -19,7 +19,7 @@
 ### 🚀 about_me.py
 
 ```python
-class s0r4d3v:
+class SelfIntroduction:
     def __init__(self):
         self.name = "s0r4d3v"
         self.role = "Machine Learning Engineer"
@@ -57,7 +57,7 @@ class s0r4d3v:
     def say_hi(self):
         print("Thanks for visiting! Let's build something interesting together! 🚀")
 
-me = MLEngineer()
+me = SelfIntroduction()
 me.say_hi()
 ```
 
