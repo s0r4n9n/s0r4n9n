@@ -1,206 +1,80 @@
-<svg fill="none" viewBox="0 0 800 800" width="800" height="800" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="800" fill="#f5f5dc"/>
+<svg viewBox="0 0 800 800" width="800" height="800" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <!-- Background pattern -->
     <pattern id="bgPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
       <rect width="20" height="20" fill="#f5f5dc"/>
-      <line x1="0" y1="0" x2="20" y2="20" stroke="rgba(255,192,203,0.15)" stroke-width="1"/>
-      <line x1="20" y1="0" x2="0" y2="20" stroke="rgba(173,216,230,0.15)" stroke-width="1"/>
+      <line x1="0" y1="0" x2="20" y2="20" stroke="rgba(255,192,203,0.3)" stroke-width="1"/>
+      <line x1="20" y1="0" x2="0" y2="20" stroke="rgba(173,216,230,0.3)" stroke-width="1"/>
     </pattern>
-  </defs>
-  <rect width="800" height="800" fill="url(#bgPattern)"/>
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @keyframes blink {
-          0%, 50% { opacity: 1; }
-          51%, 100% { opacity: 0; }
-        }
-        
-        @keyframes rainbow {
-          0% { color: #ff0000; }
-          16% { color: #ff7f00; }
-          33% { color: #ffff00; }
-          50% { color: #00ff00; }
-          66% { color: #0000ff; }
-          83% { color: #8b00ff; }
-          100% { color: #ff0000; }
-        }
-        
-        @keyframes sparkle {
-          0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
-          50% { transform: scale(1.2) rotate(180deg); opacity: 0.7; }
-        }
-        
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        
-        body {
-          font-family: "MS PGothic", "Osaka", "ヒラギノ角ゴ Pro W3", sans-serif;
-          background: transparent;
-          color: #333;
-          overflow: hidden;
-        }
-        
-        .container {
-          width: 800px;
-          height: 800px;
-          padding: 20px;
-          position: relative;
-        }
-        
-        .header {
-          text-align: center;
-          background: linear-gradient(135deg, #ff00ff, #00ffff);
-          border: 4px ridge #ffd700;
-          padding: 20px;
-          box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
-          margin-bottom: 20px;
-        }
-        
-        .title {
-          font-size: 36px;
-          font-weight: bold;
-          text-shadow: 3px 3px 0 #000, -1px -1px 0 #fff;
-          animation: rainbow 3s linear infinite;
-          margin-bottom: 10px;
-        }
-        
-        .subtitle {
-          font-size: 14px;
-          color: #ffff00;
-          animation: blink 1s infinite;
-        }
-        
-        .counter-box {
-          background: #c0c0c0;
-          border: 3px outset #dfdfdf;
-          padding: 15px;
-          margin: 20px auto;
-          width: fit-content;
-          box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
-        }
-        
-        .counter-label {
-          color: #000080;
-          font-size: 18px;
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
-        
-        .counter-display {
-          background: #000;
-          color: #00ff00;
-          font-family: "Courier New", monospace;
-          font-size: 32px;
-          padding: 10px 20px;
-          border: 2px inset #666;
-          letter-spacing: 3px;
-          text-align: center;
-        }
-        
-        .kiriban-box {
-          background: #ffffcc;
-          border: 3px double #ff0000;
-          padding: 15px;
-          margin: 20px 0;
-          color: #000;
-        }
-        
-        .kiriban-title {
-          font-size: 20px;
-          color: #ff0000;
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
-        
-        .kiriban-text {
-          font-size: 14px;
-          line-height: 1.6;
-        }
-        
-        .decoration {
-          text-align: center;
-          margin: 15px 0;
-        }
-        
-        .star {
-          display: inline-block;
-          color: #ffff00;
-          font-size: 24px;
-          animation: sparkle 1s infinite;
-          margin: 0 5px;
-        }
-        
-        .star:nth-child(2) { animation-delay: 0.2s; }
-        .star:nth-child(3) { animation-delay: 0.4s; }
-        .star:nth-child(4) { animation-delay: 0.6s; }
-        .star:nth-child(5) { animation-delay: 0.8s; }
-        
-        .note {
-          background: #fff;
-          border: 2px solid #000080;
-          padding: 10px;
-          margin: 15px 0;
-          color: #000;
-          font-size: 13px;
-        }
-        
-        .note-title {
-          color: #ff0000;
-          font-weight: bold;
-          margin-bottom: 5px;
-        }
-        
-        .footer {
-          text-align: center;
-          margin-top: 20px;
-          font-size: 12px;
-          color: #666;
-        }
-        
-        .blink-text {
-          animation: blink 1s infinite;
-        }
-      </style>
+    
+    <!-- Gradient for header -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Blink animation -->
+    <style>
+      @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0.3; }
+      }
+      .blink { animation: blink 1s infinite; }
       
-      <div class="container">
-        <div class="header">
-          <div class="title">★☆ ようこそ! ☆★</div>
-          <div class="subtitle">Welcome to my homepage!!</div>
-        </div>
-        
-        <div class="decoration">
-          <span class="star">★</span>
-          <span class="star">☆</span>
-          <span class="star">★</span>
-          <span class="star">☆</span>
-          <span class="star">★</span>
-        </div>
-        
-        <div class="counter-box">
-          <div class="counter-label">👁️ あなたは</div>
-          <div class="counter-display">0000001</div>
-          <div class="counter-label">人目の訪問者です！</div>
-        </div>
-        
-        <div class="note">
-          <div class="note-title">💻 管理人プロフィール</div>
-          <div>
-            <strong>ユーザー名:</strong> s0r4d3v<br/>
-            <strong>職種:</strong> 機械学習エンジニア<br/>
-            <strong>好きなもの:</strong> ゲーム 🎮
-          </div>
-        </div>
-        
-        <div class="footer">
-          <div style="margin-top: 5px;">
-            <span class="blink-text">Last Update: 2025.01.27</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+      @keyframes sparkle {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+      .star1 { animation: sparkle 1s infinite; }
+      .star2 { animation: sparkle 1s infinite 0.2s; }
+      .star3 { animation: sparkle 1s infinite 0.4s; }
+      .star4 { animation: sparkle 1s infinite 0.6s; }
+      .star5 { animation: sparkle 1s infinite 0.8s; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgPattern)"/>
+  
+  <!-- Header box -->
+  <rect x="40" y="40" width="720" height="120" fill="url(#headerGrad)" stroke="#ffd700" stroke-width="4"/>
+  <rect x="36" y="36" width="728" height="128" fill="none" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="95" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle" stroke="#000" stroke-width="2">★☆ ようこそ! ☆★</text>
+  <text x="400" y="95" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle">★☆ ようこそ! ☆★</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="135" font-family="Arial, sans-serif" font-size="18" fill="#ffff00" text-anchor="middle" class="blink">Welcome to my homepage!!</text>
+  
+  <!-- Stars decoration -->
+  <text x="250" y="210" font-size="32" fill="#ffff00" class="star1">★</text>
+  <text x="320" y="210" font-size="32" fill="#ffff00" class="star2">☆</text>
+  <text x="390" y="210" font-size="32" fill="#ffff00" class="star3">★</text>
+  <text x="460" y="210" font-size="32" fill="#ffff00" class="star4">☆</text>
+  <text x="530" y="210" font-size="32" fill="#ffff00" class="star5">★</text>
+  
+  <!-- Counter box -->
+  <rect x="260" y="230" width="280" height="140" fill="#c0c0c0" stroke="#dfdfdf" stroke-width="3"/>
+  <rect x="257" y="227" width="286" height="146" fill="none" stroke="#808080" stroke-width="2"/>
+  <rect x="265" y="235" width="270" height="124" fill="none" stroke="#fff" stroke-width="1"/>
+  
+  <text x="400" y="265" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000080" text-anchor="middle">👁️ あなたは</text>
+  
+  <!-- Counter display -->
+  <rect x="300" y="275" width="200" height="50" fill="#000" stroke="#666" stroke-width="2"/>
+  <rect x="297" y="272" width="206" height="56" fill="none" stroke="#999" stroke-width="1"/>
+  <text x="400" y="310" font-family="Courier New, monospace" font-size="32" fill="#00ff00" text-anchor="middle" letter-spacing="3">0000001</text>
+  
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000080" text-anchor="middle">人目の訪問者です！</text>
+  
+  <!-- Profile box -->
+  <rect x="100" y="400" width="600" height="130" fill="#fff" stroke="#000080" stroke-width="2"/>
+  <text x="120" y="430" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ff0000">💻 管理人プロフィール</text>
+  <text x="120" y="465" font-family="Arial, sans-serif" font-size="16" fill="#000">ユーザー名: s0r4d3v</text>
+  <text x="120" y="490" font-family="Arial, sans-serif" font-size="16" fill="#000">職種: 機械学習エンジニア</text>
+  <text x="120" y="515" font-family="Arial, sans-serif" font-size="16" fill="#000">好きなもの: ゲーム 🎮</text>
+  
+  <!-- Footer -->
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle" class="blink">Last Update: 2025.01.27</text>
 </svg>
