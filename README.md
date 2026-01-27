@@ -19,7 +19,7 @@
 ### 🚀 about_me.py
 
 ```python
-class MLEngineer:
+class s0r4d3v:
     def __init__(self):
         self.name = "s0r4d3v"
         self.role = "Machine Learning Engineer"
