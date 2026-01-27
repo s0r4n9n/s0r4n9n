@@ -41,8 +41,8 @@ class MLEngineer:
     
     def tech_stack(self):
         return {
-            "ml_frameworks": ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face"],
             "languages": ["Python", "Java", "Kotlin"],
+            "ml_frameworks": ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face"],
             "tools": ["Neovim", "Nix", "Git", "Linux", "Docker"]
         }
     
