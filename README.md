@@ -35,7 +35,6 @@ class MLEngineer:
             "personal": [
                 "Minecraft plugin development (Java/Kotlin)",
                 "ML experiments & research",
-                "Open source contributions",
                 "Documenting my learning journey"
             ]
         }
