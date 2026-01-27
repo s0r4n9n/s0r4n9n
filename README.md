@@ -1,1 +1,1 @@
-![](inisie.svg)
+![古のホームページ](inisie.svg)
