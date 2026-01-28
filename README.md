@@ -16,7 +16,7 @@
 
 ---
 
-### 🚀 about_me.py
+### 👋 about_me.py
 
 ```python
 class SelfIntroduction:
@@ -54,7 +54,7 @@ class SelfIntroduction:
         ]
     
     def say_hi(self):
-        print("Thanks for visiting! Let's build something interesting together! 🚀")
+        print("Thanks for visiting! Let's build something interesting together! 🤝")
 
 me = SelfIntroduction()
 me.say_hi()
