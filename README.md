@@ -16,7 +16,7 @@
 
 ---
 
-### 👋 about_me.py
+### about_me.py
 
 ```python
 class SelfIntroduction:
