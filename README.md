@@ -51,7 +51,6 @@ class SelfIntroduction:
             "🧠 Deep Learning & Neural Architecture",
             "🔍 NLP & Computer Vision",
             "⚡ Model Optimization & MLOps",
-            "🌐 Open Source Contributions"
         ]
     
     def say_hi(self):
