@@ -43,7 +43,7 @@ class SelfIntroduction:
         return {
             "languages": ["Python", "Java", "Kotlin"],
             "ml_frameworks": ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face"],
-            "tools": ["Neovim", "Nix", "Git", "Linux", "Docker"]
+            "tools": ["Neovim", "Nix", "Git", "Jujutsu", "Linux", "Docker"]
         }
     
     def interests(self):
