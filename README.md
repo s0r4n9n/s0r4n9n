@@ -11,6 +11,7 @@
 <br/>
 
 [![X](https://img.shields.io/badge/Follow-%40s0r4d3v-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/s0r4d3v)
+[![Followers](https://badgen.org/img/zenn/s0r4d3v/followers?style=for-the-badge)](https://zenn.dev/s0r4d3v)
 
 </div>
 
