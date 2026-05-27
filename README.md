@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Hi, I'm s0r4d3v
+# 👋 Hi, I'm s0r4n9n
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Machine+Learning+Engineer;Python+%7C+PyTorch+%7C+TensorFlow" alt="Typing SVG" />
 
@@ -10,8 +10,8 @@
 
 <br/>
 
-[![X](https://img.shields.io/badge/Follow-%40s0r4d3v-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/s0r4d3v)
-[![Followers](https://badgen.org/img/zenn/s0r4d3v/followers?style=for-the-badge)](https://zenn.dev/s0r4d3v)
+[![X](https://img.shields.io/badge/Follow-%40s0r4n9n-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/s0r4n9n)
+[![Followers](https://badgen.org/img/zenn/s0r4n9n/followers?style=for-the-badge)](https://zenn.dev/s0r4n9n)
 
 </div>
 
@@ -22,7 +22,7 @@
 ```python
 class SelfIntroduction:
     def __init__(self):
-        self.name = "s0r4d3v"
+        self.name = "s0r4n9n"
         self.role = "Machine Learning Engineer"
         self.location = "Japan 🇯🇵"
         
