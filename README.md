@@ -2,12 +2,6 @@
 
 # 👋 Hi, I'm s0r4n9n
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Machine+Learning+Engineer;Python+%7C+PyTorch+%7C+TensorFlow" alt="Typing SVG" />
-
-<br/>
-
-**`🤖 ML Engineer`** • **`🐍 Python Developer`** • **`📍 Japan`**
-
 <br/>
 
 [![X](https://img.shields.io/badge/Follow-%40s0r4n9n-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/s0r4n9n)
