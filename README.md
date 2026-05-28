@@ -24,28 +24,25 @@ class SelfIntroduction:
         return {
             "professional": [
                 "Building ML/AI solutions for production",
-                "Deep learning model optimization",
                 "Real-world AI applications"
             ],
             "personal": [
                 "Minecraft plugin development (Java/Kotlin)",
+                "Minecraft datapack development (mcfunction)",
                 "ML experiments & research",
-                "Documenting my learning journey"
             ]
         }
     
     def tech_stack(self):
         return {
-            "languages": ["Python", "Java", "Kotlin"],
-            "ml_frameworks": ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face"],
-            "tools": ["Neovim", "Nix", "Git", "Jujutsu", "Linux", "Docker"]
+            "languages": ["Python", "Java", "Kotlin", "mcfunction],
         }
     
     def interests(self):
         return [
-            "🧠 Deep Learning & Neural Architecture",
-            "🔍 NLP & Computer Vision",
-            "⚡ Model Optimization & MLOps",
+            "Linguistics",
+            "Phonology",
+            "NLP",
         ]
     
     def say_hi(self):
