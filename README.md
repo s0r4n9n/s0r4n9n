@@ -35,7 +35,7 @@ class SelfIntroduction:
     
     def tech_stack(self):
         return {
-            "languages": ["Python", "Java", "Kotlin", "mcfunction],
+            "languages": ["Python", "Java", "Kotlin", "mcfunction"],
         }
     
     def interests(self):
