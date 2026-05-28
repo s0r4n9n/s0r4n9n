@@ -18,7 +18,7 @@ class SelfIntroduction:
     def __init__(self):
         self.name = "s0r4n9n"
         self.role = "Machine Learning Engineer"
-        self.location = "Japan 🇯🇵"
+        self.location = "Japan"
         
     def current_focus(self):
         return {
